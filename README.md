@@ -1,3 +1,39 @@
+# Apple Watch Studio Clone
+
+This project is a simple **Apple Watch Studio Clone** that allows users to browse and select Apple Watches, choose from different watch faces, bands, and sizes, and visualize their custom Apple Watch selection. The project includes an image slider with selectable image sizes and integrates with React Context for global state management.
+
+## Features
+
+- **Image Slider**: Users can view different Apple Watch images in two sizes (small and large). They can navigate through the images and select the image size (small or large).
+  
+- **Global State Management**: The selected image and its size are stored globally using React's Context API. This allows the selected image details to be accessed throughout the application.
+
+- **Responsive Design**: The design is responsive and should work well across different screen sizes, including desktops, tablets, and mobile devices.
+
+- **Image Selection**: Users can click on either a small or large version of the image, and the selected size will be saved in the global state.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces. React is used to create reusable components like the `ImageSlider` and manage the application state.
+  
+- **React Context API**: Used to manage global state for the selected image and its size. This eliminates the need for prop drilling and allows the selected image details to be accessed across different components.
+
+- **CSS**: For styling the components and creating a simple, responsive layout for the image slider and buttons.
+
+## Installation
+
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed. You can download them from [Node.js official website](https://nodejs.org/).
+
+### Steps to Run Locally
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/apple-watch-studio-clone.git
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
