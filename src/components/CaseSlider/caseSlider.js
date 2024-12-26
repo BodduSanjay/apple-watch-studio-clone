@@ -14,7 +14,6 @@ const CaseSlider = ({
   const [selectedItemIndex, setSelectedItemIndex] = useState(null);
 
   useEffect(() => {
-    // Set the initial selected item if none is selected
     if (isCaseSelection && selectedCase) {
       const selectedIndex = items.findIndex(
         (item) => item.id === selectedCase.id
