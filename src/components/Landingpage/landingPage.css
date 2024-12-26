@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-header {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.app-img-logo {
+  width: 90px;
+}
+
+.apple-st-para {
+  font-size: 20px !important;
+  text-align: start;
+}
+
+.apple-st-heading {
+  font-size: 65px !important;
+  line-height: 1.2;
+  text-align: start;
+  color: #1d1d1f !important;
+}
+
+.hero-button {
+  background-color: #0071e3;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  width: 120px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: #005bb5;
+}
+
+/* .hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 20px;
+}
+
+.apple-display-image {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 10;
+  left: 20;
+  z-index: 10;
+  transform: scale(2);
+}
+
+.apple-belt-image {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  top: 10;
+  left: 20;
+  z-index: -1;
+  transform: scale(2);
+} */
+
+.hero-image {
+  position: relative; /* Ensures children are positioned relative to this container */
+  width: 100%;
+  max-width: 400px; /* Adjust width as needed */
+  height: auto;
+  margin: 200px auto;
+}
+
+.apple-display-image {
+  position: absolute;
+  top: 0; /* Adjust to align properly */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, 0) scale(2); /* Adjust scale as needed */
+  z-index: 10; /* Ensures it stays above the belt image */
+}
+
+.apple-belt-image {
+  position: absolute;
+  top: 0; /* Adjust to align properly */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, 0) scale(2); /* Adjust scale as needed */
+  z-index: 5; /* Ensures it stays below the display image */
+}
+
+@media (min-width: 768px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+
+  .hero-image img {
+    max-width: 400px;
+  }
+}

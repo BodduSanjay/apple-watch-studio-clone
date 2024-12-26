@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hrd-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.collections-wrapper {
+  position: relative;
+}
+
+.collections {
+  font-size: 1rem;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 3px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 30px;
+  left: -100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+  padding: 20px;
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #000;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item:hover {
+  color: gray;
+}
+
+.save-hdr-btn {
+  height: 30px;
+  width: 90px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(36, 103, 229);
+}
+
+/* Overlay Background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
