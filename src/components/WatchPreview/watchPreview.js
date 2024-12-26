@@ -71,7 +71,7 @@ const WatchPreview = () => {
             </svg>
             Size
           </p>
-          <p className="option" onClick={() => navigate("/watch-case")}>
+          <p className="option" onClick={() => navigate("/watch-cases")}>
             <svg
               height="25"
               viewBox="0 0 17 25"
